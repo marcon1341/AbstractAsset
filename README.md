@@ -63,6 +63,7 @@ Uses instanceof to handle Houses, Vehicles, and Cash separately
 
 Demonstrates polymorphic method calls and formatted output
 
-<h2><b>Sample Output![Screenshot 2025-05-14 141655](https://github.com/user-attachments/assets/53935659-5a04-4fa8-a220-f27f15f9d357)
-![Screenshot 2025-05-14 141640](https://github.com/user-attachments/assets/d04a8d35-7eee-42f9-afff-9855bc3d04cb)
-</b></h2>
+<h2><b>Sample Output</b></h2>
+![Screenshot 2025-05-14 141655](https://github.com/user-attachments/assets/1cab3f67-6fe0-4580-bfb2-03a41fd78e31)
+![Screenshot 2025-05-14 141640](https://github.com/user-attachments/assets/6289a4ca-51b2-47a4-a9cd-43a412c62b28)
+

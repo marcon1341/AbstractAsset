@@ -12,26 +12,31 @@ public class Main {
                 "Ford F-150", 2024, 10000));
         myAsset.add(new Vehicle("Mom Car", "2018-09-05", 20000,
                 "Toyota Camry", 2018, 95000));
+        myAsset.add(new Cash("Emergency Cash","2025-0425", 10000));
 
         //loop through for formating
         for(Asset asset : myAsset){
-            String lable;
+            String label;
             if(asset instanceof House){
                 House h = (House) asset;
-                lable = "House at " + h.getAddress();
+                label = "House at " + h.getAddress();
             }
-            else if(asset instanceof Vehicle){
+            else if(asset instanceof Vehicle) {
                 Vehicle v = (Vehicle) asset;
-                lable = "Vehicle: " + v.getYear() + " " + v.getMakeModel();
+                label = "Vehicle: " + v.getYear() + " " + v.getMakeModel();
+            }
+            else if(asset instanceof Cash){
+                Cash c =(Cash) asset;
+                label = "Cash: "+ c.getDescription();
             }else{
-                lable = asset.getDescription();
+                label = asset.getDescription();
             }
             System.out.printf("""
                     %s
                     Date Acquired: %s
                     Original cost: $%.2f
                     Current Value: $%.2f\n
-                    """,lable,asset.getDateAcquired(),
+                    """,label,asset.getDateAcquired(),
                     asset.getOriginalCost(),
                     asset.getValue());
         }
